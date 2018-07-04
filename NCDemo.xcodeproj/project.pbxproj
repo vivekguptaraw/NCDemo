@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25F2322EE8BEB5F0FAC0CA11 /* Pods_NCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E7B7B90F91D5DE4AA0C927 /* Pods_NCDemo.framework */; };
+		758526934A4C85AA41EF3CF6 /* Pods_NCDemo_NCDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D60FD9FD836DB32785BD235 /* Pods_NCDemo_NCDemoTests.framework */; };
+		800F857E20EA31B4008269A3 /* UIView+Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800F857D20EA31B4008269A3 /* UIView+Extesions.swift */; };
+		802F475220E4B7390078A464 /* FirstTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802F475120E4B7390078A464 /* FirstTabBar.storyboard */; };
+		802F475420E4B8280078A464 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 802F475320E4B8280078A464 /* Splash.storyboard */; };
+		802F475620E4B8DD0078A464 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F475520E4B8DD0078A464 /* SplashViewController.swift */; };
+		802F475A20E4B9C50078A464 /* NCSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F475920E4B9C50078A464 /* NCSDKManager.swift */; };
+		802F475D20E4BAFC0078A464 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F475C20E4BAFC0078A464 /* DeeplinkManager.swift */; };
+		802F476020E4C2690078A464 /* TeamScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F475F20E4C2690078A464 /* TeamScheduleVC.swift */; };
+		802F476220E4C70F0078A464 /* RostersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F476120E4C70F0078A464 /* RostersViewController.swift */; };
+		802F476A20E4D3840078A464 /* NCGameScheduleListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F476420E4D3840078A464 /* NCGameScheduleListLayout.swift */; };
+		802F476B20E4D3840078A464 /* NCMonthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F476520E4D3840078A464 /* NCMonthCollectionCell.swift */; };
+		802F476C20E4D3840078A464 /* NCScheduleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802F476620E4D3840078A464 /* NCScheduleListCell.xib */; };
+		802F476D20E4D3840078A464 /* NCScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F476720E4D3840078A464 /* NCScheduleListView.swift */; };
+		802F476F20E4D3840078A464 /* NCScheduleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F476920E4D3840078A464 /* NCScheduleListCell.swift */; };
+		802F477420E4FE590078A464 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F477320E4FE590078A464 /* UICollectionView+Extension.swift */; };
+		802F477620E4FE990078A464 /* UIView+Refactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F477520E4FE990078A464 /* UIView+Refactoring.swift */; };
+		802F477920E4FF140078A464 /* ScheduleHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F477720E4FF140078A464 /* ScheduleHeaderReusableView.swift */; };
+		802F477A20E4FF140078A464 /* ScheduleHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802F477820E4FF140078A464 /* ScheduleHeaderReusableView.xib */; };
+		8032438120E6098A00A08ACC /* ScheduleCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438020E6098A00A08ACC /* ScheduleCalendarViewModel.swift */; };
+		8032438320E60A1200A08ACC /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438220E60A1200A08ACC /* DateModel.swift */; };
+		8032438620E60CF400A08ACC /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438520E60CF400A08ACC /* DateHelper.swift */; };
+		8032438B20E61F4B00A08ACC /* NBACalenderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438820E61F4B00A08ACC /* NBACalenderViewLayout.swift */; };
+		8032438C20E61F4B00A08ACC /* NBAScheduleCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438920E61F4B00A08ACC /* NBAScheduleCalenderView.swift */; };
+		8032438D20E61F4B00A08ACC /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438A20E61F4B00A08ACC /* CalenderCell.swift */; };
+		8032438F20E6211400A08ACC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032438E20E6211400A08ACC /* Date+Extensions.swift */; };
+		8032439120E62EC200A08ACC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032439020E62EC200A08ACC /* UIColor+Extensions.swift */; };
+		8032439320E63DBB00A08ACC /* StickyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032439220E63DBB00A08ACC /* StickyLayout.swift */; };
+		80413E3E20EB9A990074F73B /* NBACore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80413E3D20EB9A980074F73B /* NBACore.framework */; };
+		804F838620E3C53800DD981B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F838520E3C53800DD981B /* AppDelegate.swift */; };
+		804F838820E3C53800DD981B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F838720E3C53800DD981B /* FirstViewController.swift */; };
+		804F838B20E3C53800DD981B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804F838920E3C53800DD981B /* Main.storyboard */; };
+		804F838D20E3C53900DD981B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804F838C20E3C53900DD981B /* Assets.xcassets */; };
+		804F839020E3C53900DD981B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804F838E20E3C53900DD981B /* LaunchScreen.storyboard */; };
+		804F839B20E3C53900DD981B /* NCDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F839A20E3C53900DD981B /* NCDemoTests.swift */; };
+		804F83A620E3C53900DD981B /* NCDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F83A520E3C53900DD981B /* NCDemoUITests.swift */; };
+		EDCC5D84497D540044FC8602 /* Pods_NCDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F7ACDB976080450C6B3EA0 /* Pods_NCDemoTests.framework */; };
+		F02BEBB5F28DD76B484E664B /* Pods_NCDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD3289DF99B7C4AAB221968 /* Pods_NCDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		804F839720E3C53900DD981B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804F837A20E3C53700DD981B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804F838120E3C53800DD981B;
+			remoteInfo = NCDemo;
+		};
+		804F83A220E3C53900DD981B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 804F837A20E3C53700DD981B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804F838120E3C53800DD981B;
+			remoteInfo = NCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CA64C5F576BDC42EB7AA76 /* Pods-NCDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemoTests/Pods-NCDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		24E7B7B90F91D5DE4AA0C927 /* Pods_NCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F7ACDB976080450C6B3EA0 /* Pods_NCDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7CB166806B608A378C8818 /* Pods-NCDemo-NCDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemo-NCDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemo-NCDemoTests/Pods-NCDemo-NCDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E889262952314489F4A3293 /* Pods-NCDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemoUITests/Pods-NCDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CD3289DF99B7C4AAB221968 /* Pods_NCDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800F857D20EA31B4008269A3 /* UIView+Extesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extesions.swift"; sourceTree = "<group>"; };
+		802F475120E4B7390078A464 /* FirstTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstTabBar.storyboard; sourceTree = "<group>"; };
+		802F475320E4B8280078A464 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		802F475520E4B8DD0078A464 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		802F475920E4B9C50078A464 /* NCSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCSDKManager.swift; sourceTree = "<group>"; };
+		802F475C20E4BAFC0078A464 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		802F475F20E4C2690078A464 /* TeamScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScheduleVC.swift; sourceTree = "<group>"; };
+		802F476120E4C70F0078A464 /* RostersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RostersViewController.swift; sourceTree = "<group>"; };
+		802F476420E4D3840078A464 /* NCGameScheduleListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCGameScheduleListLayout.swift; sourceTree = "<group>"; };
+		802F476520E4D3840078A464 /* NCMonthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMonthCollectionCell.swift; sourceTree = "<group>"; };
+		802F476620E4D3840078A464 /* NCScheduleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCScheduleListCell.xib; sourceTree = "<group>"; };
+		802F476720E4D3840078A464 /* NCScheduleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCScheduleListView.swift; sourceTree = "<group>"; };
+		802F476920E4D3840078A464 /* NCScheduleListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCScheduleListCell.swift; sourceTree = "<group>"; };
+		802F477320E4FE590078A464 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		802F477520E4FE990078A464 /* UIView+Refactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Refactoring.swift"; sourceTree = "<group>"; };
+		802F477720E4FF140078A464 /* ScheduleHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderReusableView.swift; sourceTree = "<group>"; };
+		802F477820E4FF140078A464 /* ScheduleHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHeaderReusableView.xib; sourceTree = "<group>"; };
+		8032438020E6098A00A08ACC /* ScheduleCalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCalendarViewModel.swift; sourceTree = "<group>"; };
+		8032438220E60A1200A08ACC /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		8032438520E60CF400A08ACC /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		8032438820E61F4B00A08ACC /* NBACalenderViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBACalenderViewLayout.swift; sourceTree = "<group>"; };
+		8032438920E61F4B00A08ACC /* NBAScheduleCalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBAScheduleCalenderView.swift; sourceTree = "<group>"; };
+		8032438A20E61F4B00A08ACC /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		8032438E20E6211400A08ACC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8032439020E62EC200A08ACC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8032439220E63DBB00A08ACC /* StickyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyLayout.swift; sourceTree = "<group>"; };
+		80413E3D20EB9A980074F73B /* NBACore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NBACore.framework; sourceTree = "<group>"; };
+		804F838220E3C53800DD981B /* NCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		804F838520E3C53800DD981B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		804F838720E3C53800DD981B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		804F838A20E3C53800DD981B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		804F838C20E3C53900DD981B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		804F838F20E3C53900DD981B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		804F839120E3C53900DD981B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804F839620E3C53900DD981B /* NCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		804F839A20E3C53900DD981B /* NCDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCDemoTests.swift; sourceTree = "<group>"; };
+		804F839C20E3C53900DD981B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804F83A120E3C53900DD981B /* NCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		804F83A520E3C53900DD981B /* NCDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCDemoUITests.swift; sourceTree = "<group>"; };
+		804F83A720E3C53900DD981B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D60FD9FD836DB32785BD235 /* Pods_NCDemo_NCDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCDemo_NCDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F264AE387266374A1EFE017 /* Pods-NCDemo-NCDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemo-NCDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemo-NCDemoTests/Pods-NCDemo-NCDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2882905C52CE7C878A86FB /* Pods-NCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemo/Pods-NCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B637D2DB15CDCF2C7C937D63 /* Pods-NCDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemoUITests/Pods-NCDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAAF8F24AB9D2A5E7F06E057 /* Pods-NCDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemoTests/Pods-NCDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCA2F33EA2B6CC46E98E9406 /* Pods-NCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCDemo/Pods-NCDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		804F837F20E3C53800DD981B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F2322EE8BEB5F0FAC0CA11 /* Pods_NCDemo.framework in Frameworks */,
+				80413E3E20EB9A990074F73B /* NBACore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839320E3C53900DD981B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCC5D84497D540044FC8602 /* Pods_NCDemoTests.framework in Frameworks */,
+				758526934A4C85AA41EF3CF6 /* Pods_NCDemo_NCDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839E20E3C53900DD981B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02BEBB5F28DD76B484E664B /* Pods_NCDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		802F474F20E4B6FA0078A464 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				802F477120E4D3B40078A464 /* Splash */,
+				802F475E20E4C2390078A464 /* FirstTabBarScreens */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		802F475020E4B7060078A464 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				802F475120E4B7390078A464 /* FirstTabBar.storyboard */,
+				802F475320E4B8280078A464 /* Splash.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		802F475720E4B9470078A464 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				802F475B20E4BA5B0078A464 /* DeepLinkManager */,
+				802F475820E4B98E0078A464 /* SharedInstances */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		802F475820E4B98E0078A464 /* SharedInstances */ = {
+			isa = PBXGroup;
+			children = (
+				802F475920E4B9C50078A464 /* NCSDKManager.swift */,
+			);
+			path = SharedInstances;
+			sourceTree = "<group>";
+		};
+		802F475B20E4BA5B0078A464 /* DeepLinkManager */ = {
+			isa = PBXGroup;
+			children = (
+				802F475C20E4BAFC0078A464 /* DeeplinkManager.swift */,
+			);
+			path = DeepLinkManager;
+			sourceTree = "<group>";
+		};
+		802F475E20E4C2390078A464 /* FirstTabBarScreens */ = {
+			isa = PBXGroup;
+			children = (
+				802F476320E4D3840078A464 /* ScheduleCalender+List */,
+				802F477020E4D39E0078A464 /* Rosters */,
+			);
+			path = FirstTabBarScreens;
+			sourceTree = "<group>";
+		};
+		802F476320E4D3840078A464 /* ScheduleCalender+List */ = {
+			isa = PBXGroup;
+			children = (
+				8032438720E61EDD00A08ACC /* CalendarView */,
+				8032437F20E6095100A08ACC /* ViewModels */,
+				802F475F20E4C2690078A464 /* TeamScheduleVC.swift */,
+				802F476420E4D3840078A464 /* NCGameScheduleListLayout.swift */,
+				802F476520E4D3840078A464 /* NCMonthCollectionCell.swift */,
+				802F476620E4D3840078A464 /* NCScheduleListCell.xib */,
+				802F476720E4D3840078A464 /* NCScheduleListView.swift */,
+				802F476920E4D3840078A464 /* NCScheduleListCell.swift */,
+				802F477720E4FF140078A464 /* ScheduleHeaderReusableView.swift */,
+				802F477820E4FF140078A464 /* ScheduleHeaderReusableView.xib */,
+				8032439220E63DBB00A08ACC /* StickyLayout.swift */,
+			);
+			path = "ScheduleCalender+List";
+			sourceTree = "<group>";
+		};
+		802F477020E4D39E0078A464 /* Rosters */ = {
+			isa = PBXGroup;
+			children = (
+				802F476120E4C70F0078A464 /* RostersViewController.swift */,
+			);
+			path = Rosters;
+			sourceTree = "<group>";
+		};
+		802F477120E4D3B40078A464 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				802F475520E4B8DD0078A464 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		802F477220E4FE430078A464 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				802F477320E4FE590078A464 /* UICollectionView+Extension.swift */,
+				802F477520E4FE990078A464 /* UIView+Refactoring.swift */,
+				8032438E20E6211400A08ACC /* Date+Extensions.swift */,
+				8032439020E62EC200A08ACC /* UIColor+Extensions.swift */,
+				800F857D20EA31B4008269A3 /* UIView+Extesions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8032437F20E6095100A08ACC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8032438020E6098A00A08ACC /* ScheduleCalendarViewModel.swift */,
+				8032438220E60A1200A08ACC /* DateModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8032438420E60CDF00A08ACC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8032438520E60CF400A08ACC /* DateHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8032438720E61EDD00A08ACC /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				8032438A20E61F4B00A08ACC /* CalenderCell.swift */,
+				8032438820E61F4B00A08ACC /* NBACalenderViewLayout.swift */,
+				8032438920E61F4B00A08ACC /* NBAScheduleCalenderView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		804F837920E3C53700DD981B = {
+			isa = PBXGroup;
+			children = (
+				804F838420E3C53800DD981B /* NCDemo */,
+				804F839920E3C53900DD981B /* NCDemoTests */,
+				804F83A420E3C53900DD981B /* NCDemoUITests */,
+				804F838320E3C53800DD981B /* Products */,
+				9BFCD01D57D228A86F9ADE04 /* Pods */,
+				8C7771544CCC70CD65605414 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		804F838320E3C53800DD981B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804F838220E3C53800DD981B /* NCDemo.app */,
+				804F839620E3C53900DD981B /* NCDemoTests.xctest */,
+				804F83A120E3C53900DD981B /* NCDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804F838420E3C53800DD981B /* NCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				80413E3D20EB9A980074F73B /* NBACore.framework */,
+				802F477220E4FE430078A464 /* Extensions */,
+				8032438420E60CDF00A08ACC /* Utilities */,
+				802F475020E4B7060078A464 /* Storyboards */,
+				802F474F20E4B6FA0078A464 /* Controllers */,
+				802F475720E4B9470078A464 /* Modules */,
+				804F838520E3C53800DD981B /* AppDelegate.swift */,
+				804F838720E3C53800DD981B /* FirstViewController.swift */,
+				804F838920E3C53800DD981B /* Main.storyboard */,
+				804F838C20E3C53900DD981B /* Assets.xcassets */,
+				804F838E20E3C53900DD981B /* LaunchScreen.storyboard */,
+				804F839120E3C53900DD981B /* Info.plist */,
+			);
+			path = NCDemo;
+			sourceTree = "<group>";
+		};
+		804F839920E3C53900DD981B /* NCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				804F839A20E3C53900DD981B /* NCDemoTests.swift */,
+				804F839C20E3C53900DD981B /* Info.plist */,
+			);
+			path = NCDemoTests;
+			sourceTree = "<group>";
+		};
+		804F83A420E3C53900DD981B /* NCDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				804F83A520E3C53900DD981B /* NCDemoUITests.swift */,
+				804F83A720E3C53900DD981B /* Info.plist */,
+			);
+			path = NCDemoUITests;
+			sourceTree = "<group>";
+		};
+		8C7771544CCC70CD65605414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E7B7B90F91D5DE4AA0C927 /* Pods_NCDemo.framework */,
+				48F7ACDB976080450C6B3EA0 /* Pods_NCDemoTests.framework */,
+				7CD3289DF99B7C4AAB221968 /* Pods_NCDemoUITests.framework */,
+				8D60FD9FD836DB32785BD235 /* Pods_NCDemo_NCDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BFCD01D57D228A86F9ADE04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D2882905C52CE7C878A86FB /* Pods-NCDemo.debug.xcconfig */,
+				DCA2F33EA2B6CC46E98E9406 /* Pods-NCDemo.release.xcconfig */,
+				CAAF8F24AB9D2A5E7F06E057 /* Pods-NCDemoTests.debug.xcconfig */,
+				00CA64C5F576BDC42EB7AA76 /* Pods-NCDemoTests.release.xcconfig */,
+				6E889262952314489F4A3293 /* Pods-NCDemoUITests.debug.xcconfig */,
+				B637D2DB15CDCF2C7C937D63 /* Pods-NCDemoUITests.release.xcconfig */,
+				8F264AE387266374A1EFE017 /* Pods-NCDemo-NCDemoTests.debug.xcconfig */,
+				4C7CB166806B608A378C8818 /* Pods-NCDemo-NCDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		804F838120E3C53800DD981B /* NCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804F83AA20E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemo" */;
+			buildPhases = (
+				D7000317E150668DAD2B00CF /* [CP] Check Pods Manifest.lock */,
+				804F837E20E3C53800DD981B /* Sources */,
+				804F837F20E3C53800DD981B /* Frameworks */,
+				804F838020E3C53800DD981B /* Resources */,
+				35A86ACE385D748D03C75FE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCDemo;
+			productName = NCDemo;
+			productReference = 804F838220E3C53800DD981B /* NCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		804F839520E3C53900DD981B /* NCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804F83AD20E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemoTests" */;
+			buildPhases = (
+				6F51CBEF88E2CDB61DBB4A25 /* [CP] Check Pods Manifest.lock */,
+				804F839220E3C53900DD981B /* Sources */,
+				804F839320E3C53900DD981B /* Frameworks */,
+				804F839420E3C53900DD981B /* Resources */,
+				92B0FEA5D685EE41CC9319FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804F839820E3C53900DD981B /* PBXTargetDependency */,
+			);
+			name = NCDemoTests;
+			productName = NCDemoTests;
+			productReference = 804F839620E3C53900DD981B /* NCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		804F83A020E3C53900DD981B /* NCDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804F83B020E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemoUITests" */;
+			buildPhases = (
+				678EDF682C3A061F88D2096F /* [CP] Check Pods Manifest.lock */,
+				804F839D20E3C53900DD981B /* Sources */,
+				804F839E20E3C53900DD981B /* Frameworks */,
+				804F839F20E3C53900DD981B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				804F83A320E3C53900DD981B /* PBXTargetDependency */,
+			);
+			name = NCDemoUITests;
+			productName = NCDemoUITests;
+			productReference = 804F83A120E3C53900DD981B /* NCDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		804F837A20E3C53700DD981B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Vivek Gupta";
+				TargetAttributes = {
+					804F838120E3C53800DD981B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					804F839520E3C53900DD981B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 804F838120E3C53800DD981B;
+					};
+					804F83A020E3C53900DD981B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 804F838120E3C53800DD981B;
+					};
+				};
+			};
+			buildConfigurationList = 804F837D20E3C53700DD981B /* Build configuration list for PBXProject "NCDemo" */;
+			compatibilityVersion = "Xcode 9.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 804F837920E3C53700DD981B;
+			productRefGroup = 804F838320E3C53800DD981B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				804F838120E3C53800DD981B /* NCDemo */,
+				804F839520E3C53900DD981B /* NCDemoTests */,
+				804F83A020E3C53900DD981B /* NCDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		804F838020E3C53800DD981B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804F839020E3C53900DD981B /* LaunchScreen.storyboard in Resources */,
+				802F475220E4B7390078A464 /* FirstTabBar.storyboard in Resources */,
+				804F838D20E3C53900DD981B /* Assets.xcassets in Resources */,
+				802F477A20E4FF140078A464 /* ScheduleHeaderReusableView.xib in Resources */,
+				804F838B20E3C53800DD981B /* Main.storyboard in Resources */,
+				802F475420E4B8280078A464 /* Splash.storyboard in Resources */,
+				802F476C20E4D3840078A464 /* NCScheduleListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839420E3C53900DD981B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839F20E3C53900DD981B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35A86ACE385D748D03C75FE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NCDemo/Pods-NCDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NCDemo/Pods-NCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		678EDF682C3A061F88D2096F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F51CBEF88E2CDB61DBB4A25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCDemo-NCDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B0FEA5D685EE41CC9319FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NCDemo-NCDemoTests/Pods-NCDemo-NCDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NCDemo-NCDemoTests/Pods-NCDemo-NCDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7000317E150668DAD2B00CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		804F837E20E3C53800DD981B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8032439320E63DBB00A08ACC /* StickyLayout.swift in Sources */,
+				8032438C20E61F4B00A08ACC /* NBAScheduleCalenderView.swift in Sources */,
+				8032438320E60A1200A08ACC /* DateModel.swift in Sources */,
+				802F475620E4B8DD0078A464 /* SplashViewController.swift in Sources */,
+				8032438F20E6211400A08ACC /* Date+Extensions.swift in Sources */,
+				8032438D20E61F4B00A08ACC /* CalenderCell.swift in Sources */,
+				802F477420E4FE590078A464 /* UICollectionView+Extension.swift in Sources */,
+				8032439120E62EC200A08ACC /* UIColor+Extensions.swift in Sources */,
+				802F476F20E4D3840078A464 /* NCScheduleListCell.swift in Sources */,
+				8032438120E6098A00A08ACC /* ScheduleCalendarViewModel.swift in Sources */,
+				802F477620E4FE990078A464 /* UIView+Refactoring.swift in Sources */,
+				802F476220E4C70F0078A464 /* RostersViewController.swift in Sources */,
+				802F475A20E4B9C50078A464 /* NCSDKManager.swift in Sources */,
+				8032438620E60CF400A08ACC /* DateHelper.swift in Sources */,
+				802F476A20E4D3840078A464 /* NCGameScheduleListLayout.swift in Sources */,
+				8032438B20E61F4B00A08ACC /* NBACalenderViewLayout.swift in Sources */,
+				800F857E20EA31B4008269A3 /* UIView+Extesions.swift in Sources */,
+				804F838820E3C53800DD981B /* FirstViewController.swift in Sources */,
+				804F838620E3C53800DD981B /* AppDelegate.swift in Sources */,
+				802F476B20E4D3840078A464 /* NCMonthCollectionCell.swift in Sources */,
+				802F475D20E4BAFC0078A464 /* DeeplinkManager.swift in Sources */,
+				802F477920E4FF140078A464 /* ScheduleHeaderReusableView.swift in Sources */,
+				802F476020E4C2690078A464 /* TeamScheduleVC.swift in Sources */,
+				802F476D20E4D3840078A464 /* NCScheduleListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839220E3C53900DD981B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804F839B20E3C53900DD981B /* NCDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804F839D20E3C53900DD981B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804F83A620E3C53900DD981B /* NCDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		804F839820E3C53900DD981B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804F838120E3C53800DD981B /* NCDemo */;
+			targetProxy = 804F839720E3C53900DD981B /* PBXContainerItemProxy */;
+		};
+		804F83A320E3C53900DD981B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804F838120E3C53800DD981B /* NCDemo */;
+			targetProxy = 804F83A220E3C53900DD981B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		804F838920E3C53800DD981B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804F838A20E3C53800DD981B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		804F838E20E3C53900DD981B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804F838F20E3C53900DD981B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		804F83A820E3C53900DD981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		804F83A920E3C53900DD981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		804F83AB20E3C53900DD981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2882905C52CE7C878A86FB /* Pods-NCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NCDemo",
+				);
+				INFOPLIST_FILE = NCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7e9061ce-4f9c-47f1-9c04-c1776ece4d45";
+				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
+				SWIFT_OBJC_BRIDGING_HEADER = "NCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		804F83AC20E3C53900DD981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA2F33EA2B6CC46E98E9406 /* Pods-NCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NCDemo",
+				);
+				INFOPLIST_FILE = NCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7e9061ce-4f9c-47f1-9c04-c1776ece4d45";
+				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
+				SWIFT_OBJC_BRIDGING_HEADER = "NCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		804F83AE20E3C53900DD981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F264AE387266374A1EFE017 /* Pods-NCDemo-NCDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.NCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCDemo.app/NCDemo";
+			};
+			name = Debug;
+		};
+		804F83AF20E3C53900DD981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7CB166806B608A378C8818 /* Pods-NCDemo-NCDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.NCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCDemo.app/NCDemo";
+			};
+			name = Release;
+		};
+		804F83B120E3C53900DD981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E889262952314489F4A3293 /* Pods-NCDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NCDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.NCDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NCDemo;
+			};
+			name = Debug;
+		};
+		804F83B220E3C53900DD981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B637D2DB15CDCF2C7C937D63 /* Pods-NCDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NCDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox.NCDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NCDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		804F837D20E3C53700DD981B /* Build configuration list for PBXProject "NCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F83A820E3C53900DD981B /* Debug */,
+				804F83A920E3C53900DD981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804F83AA20E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F83AB20E3C53900DD981B /* Debug */,
+				804F83AC20E3C53900DD981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804F83AD20E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F83AE20E3C53900DD981B /* Debug */,
+				804F83AF20E3C53900DD981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804F83B020E3C53900DD981B /* Build configuration list for PBXNativeTarget "NCDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804F83B120E3C53900DD981B /* Debug */,
+				804F83B220E3C53900DD981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 804F837A20E3C53700DD981B /* Project object */;
+}

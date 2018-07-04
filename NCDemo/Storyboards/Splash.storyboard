@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fpT-ZT-qMF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="HEo-mZ-0wx">
+            <objects>
+                <viewController id="fpT-ZT-qMF" customClass="SplashViewController" customModule="NCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51f-33-eSe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="S0G-HW-DIJ">
+                                <rect key="frame" x="169.5" y="530" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Km-Qz-hJ3">
+                                <rect key="frame" x="151" y="323" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90170959456596966" green="0.85815432778403278" blue="0.82812516563867178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Km-Qz-hJ3" firstAttribute="centerY" secondItem="51f-33-eSe" secondAttribute="centerY" id="4xw-Z1-9FY"/>
+                            <constraint firstItem="2Km-Qz-hJ3" firstAttribute="centerX" secondItem="51f-33-eSe" secondAttribute="centerX" id="SSy-5O-XV5"/>
+                            <constraint firstItem="S0G-HW-DIJ" firstAttribute="centerX" secondItem="51f-33-eSe" secondAttribute="centerX" id="aQn-Bl-wvd"/>
+                            <constraint firstItem="9uU-OP-ifk" firstAttribute="bottom" secondItem="S0G-HW-DIJ" secondAttribute="bottom" constant="100" id="vuU-0m-dg6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9uU-OP-ifk"/>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="S0G-HW-DIJ" id="Fn4-WW-T9e"/>
+                        <outlet property="welcomeLabel" destination="2Km-Qz-hJ3" id="xdz-b0-aDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hob-E0-QS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="171"/>
+        </scene>
+    </scenes>
+</document>

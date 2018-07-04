@@ -1,0 +1,11 @@
+framework module NBACore {
+  umbrella header "NBACore.h"
+
+  export *
+  module * { export * }
+}
+
+module NBACore.Swift {
+    header "NBACore-Swift.h"
+    requires objc
+}
