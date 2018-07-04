@@ -64,7 +64,9 @@ class NBAScheduleCalenderView: UIView {
     func generateDictionaryAsPerDay(){
         print("parentIndexPath.section \(parentIndexPath.section)")
         for (index, model) in self.scheduleListPerMonth.enumerated(){
-            guard let dt = model.gameDate else{ return}
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let dt = formatter.string(from: model.gameIsoDate!.getDatePerCurrentTimeZone()!)
             let yearMonthDayArray = dt.components(separatedBy: "-")
             let day = yearMonthDayArray.last!
             var gameDate = GameDate()

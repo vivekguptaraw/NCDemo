@@ -74,7 +74,10 @@ class NCScheduleListCell: UICollectionViewCell {
             dhmTimerView.isHidden = true
             dateLabel.isHidden = false
             finalLabel.isHidden = false
-            dateLabel.text = teamScheduleModel.gameDate
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            let dt = formatter.string(from: teamScheduleModel.gameIsoDate!.getDatePerCurrentTimeZone()!)
+            dateLabel.text = dt
             visitorScoreLabel.text = teamScheduleModel.visitor?.score
             homeScoreLabel.text = teamScheduleModel.home?.score
             visitorTeamName.isHidden = false
